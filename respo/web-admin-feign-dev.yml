@@ -5,6 +5,9 @@ spring:
 server:
   port: 7007
 
+zipkin:
+  base-uri: http://localhost:9411
+
 eureka:
   client:
     service-url:

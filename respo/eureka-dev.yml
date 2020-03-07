@@ -5,6 +5,9 @@ spring:
 server:
   port: 7003
 
+zipkin:
+  base-uri: http://localhost:9411
+
 eureka:
   instance:
     hostname: locahost     # eureka服务端的实力名称
