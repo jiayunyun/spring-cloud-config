@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: hello-spring-cloud-service-redis
+  boot:
+    admin:
+      client:
+        url: http://localhost:8084
+
+server:
+  port: 7013
+zipkin:
+  base-uri: http://localhost:9411
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7003/eureka/
+
+redis:
+  lettuce:
+    pool:
+      max-active: 8
+      max-idle: 8
+      max-wait: -1ms
+      min-idle: 0
+    sentinel:
+      master: mymaster
+      nodes: 192.168.150.138:26379
