@@ -12,7 +12,7 @@ spring:
       pool:
         max-active: 8
         max-idle: 8
-        max-wait: -1
+        max-wait: -1ms
         min-idle: 0
       sentinel:
         master: mymaster
